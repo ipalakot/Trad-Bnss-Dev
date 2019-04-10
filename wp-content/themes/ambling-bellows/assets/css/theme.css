@@ -1,0 +1,460 @@
+/* General
+--------------------------------------------------------- */
+
+body {
+    background: #FAFAFA;
+    border-top-color: #404040;
+    border-bottom-color: #00A68E;
+    color: #4C4C4C;
+}
+
+a {
+    color: #404040;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+#main a {
+    color: #B2B2B2;
+    opacity: 1;
+}
+
+#main a:hover {
+    color: #00A68E;
+}
+
+/* Defaults
+--------------------------------------------------------- */
+
+/* === Code and Preformatted text === */
+
+code {
+    color: #808080;
+    background: #FAFAFA;
+}
+
+pre {
+    background: transparent;
+    border: 1px solid #E5E5E5;
+}
+
+.comment-content pre {
+    background: transparent;
+}
+
+/* === Tables === */
+
+table caption {
+    color: #737373;
+}
+
+th {
+    background: transparent;
+    border-bottom: 1px solid #E5E5E5;
+    opacity: 1;
+}
+
+td {
+    background: transparent;
+    border-bottom: 1px solid #E5E5E5;
+    opacity: 1;
+}
+
+.comment-content th,
+.comment-content td {
+    background: transparent;
+    opacity: 1;
+}
+
+/* Images
+--------------------------------------------------------- */
+
+img {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.entry > .wp-caption,
+.entry > img,
+.entry > a img {
+    margin-top: -50px;
+}
+
+.wp-caption-text {
+    color: #B2B2B2;
+}
+
+/* Header
+--------------------------------------------------------- */
+
+#site-title a,
+#site-title a:hover {
+    color: #00A68E;
+}
+
+#site-description {
+    color: #4C4C4C;
+}
+
+/* Primary Menu
+--------------------------------------------------------- */
+
+#menu-primary {
+    border-color: #E5E5E5;
+}
+
+#menu-primary li a {
+    border-top: 1px solid #E5E5E5;
+}
+
+#menu-primary li a:hover,
+#menu-primary li.current-menu-item > a {
+    border-color: #00A68E;
+}
+
+/* Menu Portfolio
+--------------------------------------------------------- */
+
+#menu-portfolio li a,
+#menu-portfolio li a:hover,
+#menu-portfolio li.current-menu-item a,
+#menu-portfolio li.current-cat a {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #00A68E;
+}
+
+#menu-portfolio li a:hover,
+#menu-portfolio li.current-menu-item a,
+#menu-portfolio li.current-cat a {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* Main
+--------------------------------------------------------- */
+
+.entry,
+.attachment-meta,
+.loop-meta,
+#comments-template {
+    background: #FFF;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    color: #737373;
+}
+
+/* Loop Meta
+--------------------------------------------------------- */
+
+.loop-title {
+    color: #404040;
+}
+
+/* Content
+--------------------------------------------------------- */
+
+.sticky::before {
+    color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+/* === entry header ========= */
+
+#main .entry-header .entry-title,
+#main .entry-header .entry-title a {
+    color: #404040;
+}
+
+#main .entry-header .entry-title a:hover {
+    color: #00A68E;
+}
+
+/* === entry byline ========= */
+
+.entry-byline {
+    color: #B2B2B2;
+}
+
+/* === entry footer ========= */
+
+.entry-footer {
+    color: #B2B2B2;
+}
+
+/* === post-related icons ========= */
+
+.entry-byline .entry-permalink::before,
+.entry-footer .entry-permalink::before,
+.comment-meta .comment-permalink::before,
+.portfolio-item-link::before {
+    color: #00A68E;
+}
+
+a.comments-link::before {
+    color: #00A68E;
+}
+
+.entry-byline .category::before,
+.entry-footer .category::before,
+.entry-byline .portfolio::before,
+.entry-footer .portfolio::before {
+    color: #00A68E;
+}
+
+.entry-byline .post_tag::before,
+.entry-footer .post_tag::before {
+    color: #00A68E;
+}
+
+.image-sizes::before {
+    color: #00A68E;
+}
+
+.post-edit-link::before,
+.comment-edit-link::before {
+    color: #00A68E;
+}
+
+.entry-byline .entry-author a::before,
+.entry-footer .entry-author a::before {
+    color: #00A68E;
+}
+
+.entry-published::before,
+.comment-published::before {
+    color: #00A68E;
+}
+
+.post-format-link::before,
+#menu-formats li a::before {
+    color: #00A68E;
+}
+
+/* === Formats Menu ========= */
+
+#menu-formats li a::before {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.page-template-formats #menu-formats li a:hover::after {
+    color: #B2B2B2;
+}
+
+/* === atachment meta ========= */
+
+.image-info ul li {
+    border-color: #E5E5E5;
+}
+
+/* === format status ========= */
+
+.format-status .avatar {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === format chat ========= */
+
+.format-chat .chat-author {
+    border-top-color: #E5E5E5;
+}
+
+/* === format gallery ========= */
+
+.format-gallery .gallery-count {
+    color: #b2b2b2;
+}
+
+/* Theme Media Element JS
+--------------------------------------------------------- */
+
+/* === controls ========= */
+
+.mejs-controls {
+    background: #404040;
+}
+
+.wp-video-shortcode .mejs-controls {
+    border-color: #404040;
+}
+
+.mejs-button button:focus {
+    outline-color: #00A68E;
+}
+
+.mejs-button button:hover::after,
+.mejs-volume-button:hover button::after {
+    color: #00A68E;
+}
+
+.mejs-time-rail .mejs-time-loaded {
+    background: #00A68E;
+}
+
+.mejs-overlay-play .mejs-overlay-button:hover::after {
+    color: #00A68E;
+}
+
+/* === media info ========= */
+
+.video-info ul li,
+.audio-info ul li {
+    color: #E5E5E5;
+    border-bottom-color: #404040;
+}
+
+#main .video-info a:hover,
+#main .audio-info a:hover {
+    color: #FAFAFA;
+}
+
+.media-shortcode-extend .audio-info,
+.media-shortcode-extend .video-info {
+    background: #535353;
+}
+
+.media-shortcode-extend .audio-info {
+    border-top-color: #404040;
+}
+
+/* === media info toggle ========= */
+
+.media-info-toggle {
+    background: #404040;
+}
+
+#main .media-info-toggle:hover {
+    color: #FAFAFA;
+}
+
+/* Pagination
+--------------------------------------------------------- */
+
+/* === Single posts using <!--nextpage--> === */
+
+.page-links a {
+    background: transparent;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* === Single post navigation (between different posts) === */
+
+#main .loop-nav a {
+    background-color: #4C4C4C;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+}
+
+#main .loop-nav a:hover {
+    background-color: #00A68E;
+}
+
+/* === Comments pagination === */
+
+.comments-nav {
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+#main .comments-nav a {
+    background: #4C4C4C;
+    color: #FFF;
+}
+
+/* Comments
+--------------------------------------------------------- */
+
+#comments-number {
+    color: #404040;
+}
+
+/* === comment meta ========= */
+
+.comment-meta {
+    color: #B2B2B2;
+}
+
+#main .comment-author a {
+    color: #404040;
+}
+
+#main .comment-author a:hover {
+    color: #00A68E;
+}
+
+.comment-list .avatar {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === comment content ========= */
+
+.comment-content {
+    background-color: transparent;
+    border: 1px solid #E5E5E5;
+}
+
+li.ping {
+    background: transparent;
+    border-color: #E5E5E5;
+    opacity: 0.5;
+}
+
+/* === reply link ========= */
+
+#main .comment-reply-link {
+    background: #404040;
+    color: #FFF;
+}
+
+#main .comment-reply-link:hover {
+    background: #00A68E;
+    color: #FFF;
+}
+
+/* ====== RESPOND (COMMENT FORM) ====== */
+
+#reply-title {
+    color: #404040;
+}
+
+#respond .log-in-out::before {
+    color: #00A68E;
+}
+
+#respond input[type="text"],
+#respond input[type="email"],
+#respond input[type="submit"],
+#respond input[type="url"],
+#respond textarea {
+    background: #FAFAFA;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #808080;
+}
+
+#respond label[for="author"]::before,
+#respond label[for="email"]::before,
+#respond label[for="url"]::before,
+#respond label[for="comment"]::before {
+    color: #00A68E;
+}
+
+#respond input[type="submit"] {
+    background-color: #4C4C4C;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+    opacity: 1;
+}
+
+#respond input[type="submit"]:focus,
+#respond input[type="submit"]:hover {
+    opacity: 1;
+    background-color: #00A68E;
+}
+

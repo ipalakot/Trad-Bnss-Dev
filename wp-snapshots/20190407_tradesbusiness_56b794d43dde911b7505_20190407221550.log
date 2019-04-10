@@ -1,0 +1,86 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 7 April 2019 22 h 16 min
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.10
+WORDPRESS:	5.1.1
+PHP INFO:	7.2.14 | SAPI: apache2handler
+SERVER:		Apache/2.4.37 (Win64) PHP/7.2.14 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (128M default) 
+MEMORY STACK: 2MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:17 | filtered:0 | create:17 
+FILTERED: [] 
+SQL CREATED: 20190407_tradesbusiness_56b794d43dde911b7505_20190407221550_database.sql 
+SQL FILE SIZE: 810.12KB (829564) 
+SQL FILE TIME: 2019-04-07 22:16:02 
+SQL RUNTIME: 1.25 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/wamp64/www/wordp/wordp1 
+ARCHIVE FILE: 20190407_tradesbusiness_56b794d43dde911b7505_20190407221550_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	114.01MB 
+STATS:	Dirs 844 | Files 4,947 
+SQL ADDED: 20190407_tradesbusiness_56b794d43dde911b7505_20190407221550_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 5791
+    [filename] => C:\wamp64\www\wordp\wordp1\wp-snapshots\tmp\20190407_tradesbusiness_56b794d43dde911b7505_20190407221550_archive.zip
+    [comment] => 
+)
+ 
+FILE ADDED TO ZIP: 5790 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 50.76MB 
+ARCHIVE RUNTIME: 14.32 sec. 
+MEMORY STACK: 4MB 
+building installer 
+add_extra_files1 
+add_extra_files2 
+add_extra_files3 
+add_extra_files4 
+Doing archive file check 
+add_extra_files5 
+add_extra_files6 
+add_extra_files8 
+Successfully opened zip C:/wamp64/www/wordp/wordp1/wp-snapshots/tmp/20190407_tradesbusiness_56b794d43dde911b7505_20190407221550_archive.zip 
+Adding enhanced installer files to archive using ZipArchive 
+Installer files added to archive 
+Added to archive 
+After ziparchive close when adding installer 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL FILE: 810.12KB 
+INSTALLER FILE: 207.33KB 
+ARCHIVE FILE: 51.72MB  
+EXPECTED FILE/DIRECTORY COUNT: 5,791 
+ACTUAL FILE/DIRECTORY COUNT: 5,790 
+ARCHIVE CONSISTENCY TEST: Pass 
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 17.00 sec.
+PEAK PHP MEMORY USED: 6MB
+DONE PROCESSING => 20190407_tradesbusiness 7 April 2019 22 h 16 min
+ 

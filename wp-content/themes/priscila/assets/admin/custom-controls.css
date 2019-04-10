@@ -1,0 +1,120 @@
+.customize-control-checkbox label{
+	margin-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 28px;
+}
+ 
+.onoffswitch_label{
+	display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+    width: 200px;
+}
+ 
+.onoffswitch {
+	position: relative;
+	width: 40px;
+	display: inline-block;
+	float: right;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+ 
+.onoffswitch-checkbox {
+	display: none!important;
+}
+ 
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	height: 18px;
+	padding: 0;
+	line-height: 18px;
+	border: 2px solid #9E9E9E;
+	border-radius: 18px;
+	background-color: #9E9E9E;
+	transition: background-color 0.2s ease-in;
+}
+ 
+.onoffswitch-label:before {
+	content: "";
+	display: block;
+	width: 18px;
+	margin: 0;
+	background: #EBEBEB;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	border: 2px solid #9E9E9E;
+	border-radius: 18px;
+	transition: all 0.2s ease-in 0s;
+}
+ 
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+	background-color: #42A5F5;
+}
+ 
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	border-color: #42A5F5;
+}
+ 
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	right: 0;
+}
+
+.gallery-item {
+  width: 50px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #777;
+  position: relative;
+}
+
+.gallery-item .gallery-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(119, 119, 119, 0.8);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-placeholder {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px dashed #777;
+}
+
+.custom-customizer-social-media-container .custom-customizer-social-media-item-container {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #E2E2E2;
+}
+
+.custom-customizer-social-media-container .custom-customizer-social-media-item-container select,
+.custom-customizer-social-media-container .custom-customizer-social-media-item-container input {
+	margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=../../sourcemaps/admin/gallery.css.map */

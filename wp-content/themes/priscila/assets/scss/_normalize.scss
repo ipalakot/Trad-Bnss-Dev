@@ -1,0 +1,452 @@
+/*--------------------------------------------------------------
+## Html
+--------------------------------------------------------------*/
+
+html {
+  font-family: $font_family;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    font-family: inherit;
+    font-weight: 300;
+  }
+}
+
+/*--------------------------------------------------------------
+## Body
+--------------------------------------------------------------*/
+
+body {
+  color: $text;
+  font-family: $font_family;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  background: #ffffff;
+}
+
+/*--------------------------------------------------------------
+## Headings
+--------------------------------------------------------------*/
+
+h1 {
+  font-size: 1.7em;
+  margin: 0.67em 0;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  line-height: 1.4em;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin: 0.4em 0;
+  line-height: 1.35em;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+  margin: 0.3em 0;
+  line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: $dark_text;
+  font-family: $font_family_sd;
+  word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------
+## Paragraph
+--------------------------------------------------------------*/
+
+p {
+  margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  @include color( $theme );
+  @include hover( $theme_hover, null, null ); 
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+
+ul {
+  margin: 1rem 0;
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+ol {
+  margin: 1rem 0;
+  list-style: decimal;
+  list-style-position: inside;
+  padding-left: 15px;
+}
+
+li {
+  margin: 5px 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+li > ul,
+li > ol {
+  margin-left: 0.5em;
+  padding-left: 15px;
+}
+
+dt {
+  font-weight: 400;
+}
+
+dd {
+  margin: 1em;
+}
+
+/*--------------------------------------------------------------
+## Images
+--------------------------------------------------------------*/
+
+img {
+  height: auto;
+  max-width: 100%;
+  border-style: none;
+}
+
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+
+button {
+  &[ type='button' ],
+  &[ type='reset' ],
+  &[ type='submit' ] {
+    -webkit-appearance: button;
+  }
+
+  &:-moz-focus-inner,
+  &[ type='button' ]::-moz-focus-inner,
+  &[ type='reset' ]::-moz-focus-inner,
+  &[ type='submit' ]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  &:-moz-focusring,
+  &[ type='button' ]:-moz-focusring,
+  &[ type='reset' ]:-moz-focusring,
+  &[ type='submit' ]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  @include button();
+}
+
+/*--------------------------------------------------------------
+## Inputs & Forms
+--------------------------------------------------------------*/
+
+form {
+  max-width: 100%;
+  width: 100%;
+}
+
+input[ type='button' ],
+input[ type='reset' ],
+input[ type='submit' ] {
+  @include button();
+}
+
+input[ type='text' ],
+input[ type='email' ],
+input[ type='url' ],
+input[ type='password' ],
+input[ type='search' ],
+input[ type='number' ],
+input[ type='tel' ],
+input[ type='range' ],
+input[ type='date' ],
+input[ type='month' ],
+input[ type='week' ],
+input[ type='time' ],
+input[ type='datetime' ],
+input[ type='datetime-local' ],
+input[ type='color' ],
+textarea,
+select {
+  outline: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: #ffffff;
+  color: $text;
+  border: 1px solid $border_light;
+  border-radius: $border_radius;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0;
+  overflow: visible;
+  line-height: 1.15;
+}
+
+input[ type='password' ] {
+  margin-bottom: 15px;
+}
+
+select {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  overflow: auto;
+}
+
+optgroup {
+  color: $text;
+  font-family: $font_family;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+select { 
+  text-transform: none;
+  max-width: 100%;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  color: inherit; 
+  display: table; 
+  max-width: 100%; 
+  padding: 0; 
+  white-space: normal;
+}
+
+[ type='checkbox' ],
+[ type='radio' ] {
+  padding: 0; 
+}
+
+[ type='number' ]::-webkit-inner-spin-button,
+[ type='number' ]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+ [ type='search' ] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[ type='search' ]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; 
+  font: inherit; 
+}
+
+[hidden] {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid $border_light;
+    padding: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+## Blockquote
+--------------------------------------------------------------*/
+
+blockquote {
+  position: relative;
+  margin: 0 10px;
+  padding-left: 20px;
+  font-style: italic;
+  z-index: 0;
+
+  &:before {
+    @include position( $top: -8px );
+    content: '"';
+    color: $light;
+    font-size: 30px;
+    z-index: -1;
+  }
+}
+
+/*--------------------------------------------------------------
+## Figure
+--------------------------------------------------------------*/
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+/*--------------------------------------------------------------
+## Iframe, Embed, Object
+--------------------------------------------------------------*/
+
+embed, iframe, object {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Text elements
+--------------------------------------------------------------*/
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+pre {
+  background: darken( #ffffff, 15% );
+  font-family: 'Courier 10 Pitch', Courier, monospace;
+  font-size: 15px;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+  color: $dark_text;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark_text;
+  }
+  
+}
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  font-size: 15px;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+code {
+  display: block;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted $dark;
+  cursor: help;
+}
+
+abbr[title] {
+  border-bottom: none; 
+  text-decoration: underline; 
+  text-decoration: underline dotted;
+}
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*--------------------------------------------------------------
+## Address
+--------------------------------------------------------------*/
+
+address {
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Others
+--------------------------------------------------------------*/
+
+hr {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid $border_light;
+  margin: 0.5em 0 1.5em;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; 
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+template {
+  display: none;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}

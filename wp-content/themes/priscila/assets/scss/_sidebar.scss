@@ -1,0 +1,31 @@
+#secondary.widget-area {
+	width: 100%;
+
+	@include from( $sidebar_mq_sm ) {
+		width: calc( #{$sidebar_width} / #{$sidebar_divider} );
+	
+		.sidebar-right & {
+			padding-left: calc( #{$sidebar_gap} / #{$sidebar_divider} );
+		}
+
+		.sidebar-left & {
+			padding-right: calc( #{$sidebar_gap} / #{$sidebar_divider} );
+		}
+	}
+
+	@include from( $sidebar_mq_m ) {
+		width: $sidebar_width;
+
+		.sidebar-right & {
+			padding-left: $sidebar_gap;
+		}
+
+		.sidebar-left & {
+			padding-right: $sidebar_gap;
+		}
+	}
+
+	.no-sidebar & {
+		display: none;
+	}
+}

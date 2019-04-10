@@ -1,0 +1,36 @@
+$font_family: 'Open Sans', 'Lucida Grande', Arial, sans-serif;
+$font_family_sd: 'Playfair Display', 'Times New Roman', serif;
+
+$theme: #BB5A44;
+$theme_hover: darken( $theme, 10% );
+$theme_light: #C5715E;
+
+$dark: #21201F;
+$dark_more: darken( $dark, 3% );
+$dark_less: lighten( $dark, 3% );
+
+$gray_dark: #3c3c3c;
+$gray: #595959;
+$gray_light: #929292;
+$light: #E6E6E6;
+$accesibility: #000000;
+
+$text: #767676;
+$light_text: #AFB0AF;
+$light_text_hover: #D3D3D3;
+$dark_text: #404040;
+$dark_text_hover: #1C1C1C;
+$link: $theme;
+$link_hover: $theme_hover;
+
+$border_light: #DCDCDC;
+$border_dark: lighten( $dark, 5% );
+
+$duration: 0.3s;
+$border_radius: 0;
+
+$sidebar_mq_sm: 750;
+$sidebar_mq_m: 900;
+$sidebar_width: 350px;
+$sidebar_gap: 50px;
+$sidebar_divider: 1.3;

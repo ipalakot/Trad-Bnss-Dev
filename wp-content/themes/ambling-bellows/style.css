@@ -1,0 +1,18 @@
+/**
+ * Theme Name:  Ambling Bellows
+ * Theme URI:   https://github.com/thremes/ambling-bellows
+ * Description: A fun child theme for the Socially Awkward parent theme.
+ *
+ * Version:     0.1.1
+ * Author:      Thiago Senna
+ * Author URI:  http://thremes.com.br
+ *
+ * Template:    socially-awkward
+ *
+ * Tags:        white, gray, green, one-column, featured-images, microformats, post-formats, sticky-post, threaded-comments
+ *
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+@import "assets/css/theme.css";

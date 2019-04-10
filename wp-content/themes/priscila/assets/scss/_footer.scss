@@ -1,0 +1,95 @@
+/*--------------------------------------------------------------
+## Widgets Area
+--------------------------------------------------------------*/
+
+.footer-widgets {
+	background: $dark;
+
+	&-container {
+		@include container();
+		@include flex( space-between, flex-start );
+
+		.footer-widgets-column {
+			width: 100%;
+
+			&:last-child {
+				@include spacer( bottom );	
+			}
+
+			@include from( 950 ) {
+				@include spacer( bottom );	
+			}	
+		}
+
+		&-columns-1 .footer-widgets-column {
+			@include from( 600 ) {
+				width: 50%;
+				margin: 0 auto;
+			}	
+		}
+
+		&-columns-2 .footer-widgets-column {
+			@include from( 600 ) {
+				width: 45%;
+				display: inline-block;
+			}	
+		}
+
+		&-columns-3 .footer-widgets-column {
+			@include from( 600 ) {
+				width: 48%;
+				display: inline-block;
+			}	
+			
+			@include from( 950 ) {
+				width: 31%;
+				display: inline-block;
+			}	
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Info
+--------------------------------------------------------------*/
+
+.footer-info {
+	background: $dark_more;
+	padding: 30px 0 29px;
+
+	&-container {
+		@include container();
+		text-align: center;
+	}
+
+	&-content {
+		margin: 0;
+		font-size: 13px;
+		color: $light_text;
+	}
+
+	.footer-navigation-list {
+		@include list_unstyled();
+		margin: 15px 0 -10px 0;
+
+		.menu-item {
+			display: inline-block;
+		}
+
+		a {
+			display: inline-block;
+			margin: 0 10px 10px;
+			font-size: 13px;
+			@include color( $light_text );
+			@include hover( #ffffff );
+		}
+
+		.current-menu-item a {
+			@include color( #ffffff );
+		}
+	}
+
+	.footer-navigation-no-copyright {
+		margin: 0 0 -10px 0;
+	}
+}

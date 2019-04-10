@@ -1,0 +1,33 @@
+.page-404 {
+	width: 100%;
+	text-align: center;
+
+	.page-title {
+		position: relative;
+		margin: -8px 0 15px 0;
+		padding: 0 0 20px 0;
+		font-size: 22px;
+
+		@include from( 600 ) {
+			margin: -8px 0 40px 0;
+			padding: 0 0 40px 0;
+			font-size: 25px;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translatex( -50% );
+			width: 100px;
+			height: 1px;
+			background: $border_light;
+		}
+	}
+
+	p {
+		margin: 0;
+		font-size: 14px;
+	}
+}

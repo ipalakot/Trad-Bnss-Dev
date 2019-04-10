@@ -1,0 +1,173 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @include from( 500 ) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  @include from( 1250 ) {
+    max-width: 1200px;
+  }
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.site-content {
+  @include container();
+  @include flex( space-between, flex-start );
+
+  &.sidebar-left {
+    flex-direction: row-reverse;
+  }
+
+  body.no-sidebar & {
+    @include flex( center );
+  }
+}
+
+html.remove-scroll-ie, 
+body.remove-scroll-ie { 
+  overflow: hidden; 
+  height: 100px;
+}
+
+body.remove-scroll {
+  overflow: hidden; 
+}
+
+.search-form {
+  @include flex( center, center );
+  margin: 20px 0 0 0;
+
+  .search-no-results & {
+    max-width: 300px;
+  }
+
+  .error404 & {
+    max-width: 300px;
+    margin: 20px auto 0;
+  }
+
+  .search-field {
+    width: calc( 100% - 38px );
+    border-radius: $border_radius 0 0 $border_radius;
+    @include hover( $text, #ffffff, $border_light );
+  }
+
+  .search-button {
+    @include button( $padding: 10px 13px, $font_size: 12px, $width: 38px );
+    border-radius: 0 $border_radius $border_radius 0;
+  }
+}
+
+.post-navigation,
+.posts-navigation {
+  @include bottom_spacer();
+
+  .nav-links {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid $border_light;
+    border-bottom: 1px solid $border_light;
+  }
+
+  .nav-previous,
+  .nav-next {
+    display: inline-block;
+    margin: 0 15px;
+
+    a {
+      @include button( $bg_cl: $gray_dark, $bg_cl_hover: $dark, $padding: 10px 14px 9px, $font_size: 14px );
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  .nav-previous a:before,
+  .nav-next a:after {
+    content: "\f104";
+    font-family: 'Font Awesome 5 Free';
+    padding: 0 10px 0 0;
+    font-size: 8px;
+    display: inline-block;
+    transform: translateY( -1px );
+  }
+
+  .nav-next a:after {
+    content: "\f105";
+    padding: 0 0 0 10px;
+  }
+}
+
+.page-links {
+  clear: both;
+  margin-top: 20px;
+  text-align: center;
+
+  span {
+    border: 1px solid $text;
+    padding: 3px 8px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  a span {
+    border: 1px solid $theme;
+    @include hover( #ffffff, $theme_hover, $theme_hover );
+  }
+}
+
+.page-header {
+
+  &-title {
+    margin: 0 0 20px;
+
+    .single-post & {
+      margin: 20px 0; 
+    }
+  }
+
+  body.archive &,
+  body.search & {
+    border-bottom: 1px solid $border_light;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+
+    &-title {
+      margin: 0;
+    }
+
+    &-description {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.post-header-title {
+  margin: 20px 0;
+  font-size: 25px;
+  
+  @include from( 580 ) {
+    font-size: 33px;
+  }
+
+  .post-header-link {
+    @include color( $dark, transparent, transparent );
+    @include hover( $theme, transparent, transparent );
+  }
+
+  body.search & {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  body.attachment & {
+    margin: 0 0 25px 0;
+  }
+}

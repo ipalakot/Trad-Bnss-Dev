@@ -1,0 +1,167 @@
+.slider {
+  @include bottom_spacer();
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: $border_radius;
+  overflow: hidden;
+
+  @include from( 700 ) {
+    height: 400px;
+  }
+
+  @include from( 1000 ) {
+    height: 500px;
+  }
+
+  &-list {
+    @include list_unstyled();
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &-item {
+    @include position();
+    @include hidden();
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+
+    img {
+      display: none;
+    }
+
+    &-active {
+      @include visible();
+      z-index: 2;
+    }
+
+    &-inactive {
+      transform: scale( 1.1 );
+    }
+  }
+
+  &-item-container {
+    @include position( $bottom: 0 );
+    @include color( $dark_text_hover, rgba( $dark , 0.85 ) );
+    width: inherit;
+    padding: 20px;
+    font-size: 18px;
+    transition: $duration;
+
+    @include from( 500 ) {
+      @include flex( center, flex-start, column );
+      width: 300px;
+    }
+
+    @include from( 700 ) {
+      padding: 30px;
+    }
+
+    @include from( 1000 ) {
+      padding: 50px;
+      width: 500px;
+    }
+
+    .post-categories-list {
+      @include list_unstyled( inline-block );
+      display: none;
+
+      @include from( 500 ) {
+        position: relative;
+        display: block;
+        padding-bottom: 15px;
+      }
+
+      a {
+        @include color( $light_text, transparent );
+        @include hover( $theme_hover, transparent );
+        font-size: 12px;
+        padding-right: 10px;
+      }      
+    }
+  }
+
+  &-item-link {
+    @include button( $br_width: 1px, $margin: 30px 0 0 0, $padding: 5px 9px 4px, $font_size: 13px );
+
+    @include from( 1000 ) {
+      padding: 7px 15px 6px;
+      font-size: 15px;
+      margin-top: 80px;
+    }
+
+    .fas {
+      transform: translateY( -1px );
+      display: inline-block;
+      font-size: 8px;
+      padding-left: 8px;
+
+      @include from( 1000 ) {
+        font-size: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &-item-title {
+    margin: 0 0 -3px;
+    font-size: 19px;
+    transition: $duration;
+    color: #ffffff;
+
+    @include from( 700 ) {
+      font-size: 22px;
+    }
+
+    @include from( 1000 ) {
+      font-size: 32px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+## Slider Arrows
+--------------------------------------------------------------*/
+
+.slider {
+
+  &-arrows {
+    @include position( $top: auto, $bottom: 0, $left: 50%, $transform: translateX( -50% ) );
+    @include flex();
+    z-index: 3;
+
+    &:after {
+      content: "";
+      @include position( $top: 50%, $left: 50%, $transform: translate( -50%, -50% ) );
+      height: 100%;
+      width: 10px;
+      background: #ffffff;
+      z-index: -1;
+    }
+  }
+
+  &-arrow {
+    @include button( $cl: $text, $cl_hv: #ffffff, $bg_cl: #ffffff, $bg_cl_hover: $theme, $padding: .4em 1em, $font_size: 12px );
+  }
+
+  &-arrow-prev {
+    border-radius: $border_radius 0 0 0;
+    padding: 12px 18px 12px 16px;
+
+    @include from( 700 ) {
+      padding: 14px 22px 14px 20px;
+    }
+  }
+
+  &-arrow-next {
+    border-radius: 0 $border_radius 0 0;
+    padding: 12px 16px 12px 18px;
+
+    @include from( 700 ) {
+      padding: 14px 20px 14px 22px;
+    }
+  }
+}
